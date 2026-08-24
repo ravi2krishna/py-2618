@@ -1,0 +1,26 @@
+Class - 1
+==========
+
+    -> Python Course
+ 
+        -> Full Stack Development 
+
+            -> HTML / CSS / JS / SQL / Django 
+
+            -> Build Web Applications 
+
+        -> Data Analytics / Science / Engineering / AI 
+
+            -> Numpy / Pandas / PyTorch etc 
+
+            -> Build Visualizations & Reporting / Build LLM / Data Pipelines (ETL) / AI Agents 
+
+        -> Cloud Computing / DevOps / Automation Testing 
+
+            -> Build Automation Scripts 
+
+
+    -> Course Name: We Learn Core Python For Next 1 Month, 
+    which is common for all above mentioned courses 
+
+        -> GOAL: Strong Python Foundation 
