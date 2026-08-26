@@ -24,3 +24,177 @@ Class - 1
     which is common for all above mentioned courses 
 
         -> GOAL: Strong Python Foundation 
+
+
+
+Class - 2
+==========
+
+    -> Python 
+
+        -> Python is a high-level, general-purpose programming language. 
+        It emphasizes code readability, simplicity, and ease-of-writing 
+        with the use of significant indentation, "plain English" naming, 
+        an extensive ("batteries-included") standard library, and garbage collection.
+
+
+        -> Python is a high-level programming language
+
+            -> High Level Language 
+
+                -> High Level Language Means "Human Understandable" Language (English)
+
+                -> Python Code Looks Like Plain English 
+
+                    num1 = 1.5
+                    num2 = 2.5 
+                    sum = num1 + num2 
+
+            -> Low Level Language 
+
+                -> Low Level Language Means "Machine Understandable" Language (Binary Bits 0101001)
+
+                -> 01110000 01111001 01110100 01101000 01101111 01101110 = python
+
+        
+        -> Python is a general-purpose programming language
+
+            -> General Purpose Language
+
+                -> We Can Build "Multiple Types" Of Applications
+
+                    -> Desktop Applications ? -> Yes   
+
+                    -> Web Applications ? -> Yes 
+
+                    -> API's ? -> Yes 
+
+                    -> Automation Scripts ? -> Yes 
+
+
+            -> Domain Specific Language 
+
+                -> We Can Build "Specific Types" Of Applications
+
+                -> Structured Query Language(SQL) is a domain-specific language used to 
+                manage data, especially in a relational database management system(RDBMS). 
+
+                    -> Desktop Applications ? -> No   
+
+                    -> Web Applications ? -> No 
+
+                    -> API's ? -> No 
+
+                    -> Automation Scripts ? -> No  
+
+        -> Python emphasizes code readability, simplicity, and ease-of-writing 
+        with the use of significant indentation, "plain English" naming
+
+            -> Code Readability - Simplicity - Ease-of-writing
+
+                Java Code
+                ---------
+
+                    class Main {
+
+                        public static void main(String[] args) {
+                            
+                            int first = 10;
+                            int second = 20;
+
+                            // add two numbers
+                            int sum = first + second;
+                            System.out.println(first + " + " + second + " = "  + sum);
+                        }
+                    }
+
+                class
+                public
+                static
+                void
+                []
+                ;
+                etc 
+
+
+                Python Code
+                ------------
+
+                num1 = 1.5
+                num2 = 2.5 
+                sum = num1 + num2 
+                print(sum)
+
+
+            -> Indentation 
+
+                -> Indentation Refers To Code Structuring 
+
+                -> In Python We Use "Spaces" For Indentation
+
+                -> When To Use Space, When Not To Use and How Many Spaces To Use
+
+                -> Guido van Rossum began working on Python in the late 1980s 
+                as a successor to the ABC programming language. 
+
+                -> ABC Language: https://cdn-blog.adafruit.com/uploads/2020/01/adafruit_2019_3368.jpg
+
+
+            -> Python is an extensive ("batteries-included") standard library, and garbage collection
+
+                -> Extensive ("batteries-included") standard library
+
+                    -> Python Installation(standard library) Has Already Provided 200+ Modules 
+
+
+            -> Python is Garbage Collected Language 
+
+                -> Garbage Collected Means Automatically Removing "Unused" Data 
+
+                    -> Python Automatically Cleans Up "Unused" Data From Memory(RAM)
+
+                        product = "iphone"
+                        price = 120000
+                        rating = 4.7
+
+                        print(product)
+                        print(rating)
+
+                    -> NOTE: Python Cleans Up price Memory as it's never used in program 
+
+
+        -> Programming Paradigms 
+
+            -> A programming paradigm is a relatively high-level way to 
+            conceptualize and structure the implementation of a computer program.   
+
+            -> Problem: How To Reach Institute ? 
+
+                -> Solution 1: I'll Come By Walk               
+
+                -> Solution 2: I'll Come By Bike  
+
+            -> We Have Two Popular Types 
+
+                -> Imperative Approach 
+
+                    -> Focus is on "HOW TO DO"
+
+                    -> Object Oriented Approach 
+
+                -> Declarative Approach 
+
+                    -> Focus is on "WHAT TO DO"
+
+                    -> Functional Oriented Approach 
+
+            -> NOTE: Python Uses Multi Programming Paradigm Approach i.e 
+            We Can Use Both Imperative Approach & Declarative Approach 
+
+                -> https://miro.medium.com/v2/resize:fit:1200/1*Jf5GJS1XtRsHWbZldcvOiQ.png
+
+
+
+
+
+
