@@ -309,3 +309,102 @@ Class - 3
                 to Python Interpreter
                 
                  
+Class - 4
+==========
+
+    -> Python Syntax / Rules / Best Practices 
+
+        -> Any Python File We Write, it should have extension as .py 
+
+            -> app.py or demo.py 
+
+        -> Python Ignores Lines That Start With # 
+
+            -> # Means Comment 
+
+        -> In Python We Have Functions, which does some Task 
+
+            -> Any Function Has Name i.e function_name()
+
+            -> NOTE: We Have print() - Prints Values On Standard Output 
+
+        -> When Working With Numeric Values (1,5,1.5 etc)
+        we can directly use print()
+
+        -> When Working With Text Data, In Python We Call Them as Strings 
+
+            -> Rule / Syntax: Strings Should Be Enclosed in ' ' or " " 
+
+
+    
+    -> Identifiers 
+
+        -> An Identifier is a "Name" used to Uniquely Identify a piece of data in code
+
+            -> Variables 
+
+            -> Functions 
+
+            -> Classes 
+
+            -> Objects 
+
+            -> Methods
+
+            -> etc 
+
+        
+        -> Identifier Rules
+
+            -> Can Contain 
+
+                -> Alphabets (a-z A-Z)
+                -> Digits (0-9)
+                -> Special Symbols (Only _ (underscore) is allowed)
+
+            -> Must Start With 
+
+                -> An Alphabet or _ (underscore)
+
+            -> NOTE: Always Use Proper Way Of Naming Identifiers 
+
+            -> NOTE: Always Use UPPER CASE Naming for Static Data (Fixed Data)
+
+
+    
+    -> Variables         
+
+        -> Variable is a named storage location in computers memory
+        thats holds some value or data.
+
+        -> Syntax 
+
+            -> variable_name = value 
+
+                -> variable_name should follow Identifier Rules 
+
+                -> = is called Assignment Operator 
+            
+                -> value is the data you want to store 
+
+                    -> data = 10 (valid) 
+                    -> data = ten (invalid) 
+                    -> data = "ten" (valid) 
+                    -> @data = "10" (invalid)
+
+            
+            -> Variables Allows You To 
+
+                -> Assign Data (Store Data)
+
+                -> Retrieve Data (Get Data)
+
+                -> Manipulate Data (Change Data)
+
+
+        -> Combine Variables With Custom Statements 
+
+            -> Concatenation: Joining Strings Using + Operator 
+
+            -> NOTE: When Combining Strings With Other Data Types 
+            Like int, float, boolean etc use , Operator 
