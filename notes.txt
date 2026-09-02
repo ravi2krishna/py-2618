@@ -408,3 +408,98 @@ Class - 4
 
             -> NOTE: When Combining Strings With Other Data Types 
             Like int, float, boolean etc use , Operator 
+
+
+Class - 5
+==========
+
+    -> When Working With Variables, We Need To know about Data Types & Memory 
+
+        -> NOTE: To Know The Data Type Of Variable 
+
+            -> Use type() function 
+
+        -> NOTE: To Know The Memory Address Of Variable 
+
+            -> Use id() function 
+
+        -> Memory Model In Python 
+
+            -> If a value is already present in the memory,
+            python will not create a new memory block again. 
+
+        
+        -> Manipulate Data (Change Data)
+
+            -> Then We Need To Use "Operators"
+
+
+    
+    -> Operators
+
+        -> Operators are special "Symbols" and "keywords", 
+        which Performs Operations on Variables and their Values.
+
+        -> There are different types of operators, 
+        to deal with different types of data (Data Types)
+
+        -> Arithmetic Operators 
+
+            -> To Perform Mathematical Calculations 
+
+                -> + - * / % 
+
+                -> // - Floor Division (Same as division, but rounds off result)
+
+                -> ** - Exponentiation (Same as Calculating Powers)
+
+            -> Amazon Cart Functionality 
+
+                -> https://www.amazon.in/ 
+
+                -> Task Develop Calculation Of EMI 
+
+                    -> https://www.cardekho.com/tata/punch
+
+                    -> Refer Formula - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUMorOq7Q6rIY-HPzQVBs44Zx0DSE-57H6C5pzo-ePb4uOiskBkU66hVQ&s=10
+
+                
+        
+        -> Compound Assignment Operators 
+
+            -> Assignment Operator i.e = 
+            Used for assigning a value to Variable 
+
+            -> Compound Assignment Operators Combines Arithmetic Operators With Assignment Operator
+
+            -> Used For Short Hand Code (Concise Code)
+
+                -> x = 10
+                -> x = x * 10 (long form)
+
+                -> x *= 10 (short form)
+
+                -> NOTE: x = x * 10 and x *= 10, both does same operation 
+
+            -> NOTE: In Other Programming Languages Like (Java), We Have 
+            Increment and Decrement Operators 
+
+                -> Increment Operator ++ 
+                
+                -> Decrement Operator -- 
+
+                -> NOTE: In Python We Don't Have Increment and Decrement Operators,
+                instead we use Compound Assignment Operators 
+
+                -> NOTE: We Use Them In Loops 
+
+        
+        -> Comparison Operators 
+
+            -> Comparison Operators are used for Comparing Values
+            and result will be in boolean type (True/False)
+
+            -> NOTE: We Use Them In Conditions / Conditional Statements 
+
+            -> ==, !=, >, <, >=, <= 
+
