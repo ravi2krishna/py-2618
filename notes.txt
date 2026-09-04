@@ -503,3 +503,130 @@ Class - 5
 
             -> ==, !=, >, <, >=, <= 
 
+
+Class - 6
+==========
+
+    -> Operators Continued 
+
+        -> Logical Operators 
+
+            -> Logical Operators are used to Perform Logical Operations 
+
+            -> Used To Check Multiple Conditions and this leads to result in
+            boolean type (True/False)
+
+            -> NOTE: Logical Operators are keywords 
+
+                -> and: if both conditions are True, then only result is True, otherwise False 
+                -> or: if one of the conditions is True, then result is True, otherwise False 
+                -> not: negates the result, if true then false and vice versa 
+
+                            X       Y        X and Y    X or Y    not X    not Y
+                            T       T           T         T         F       F
+                            T       F           F         T         F       T
+                            F       T           F         T         T       F
+                            F       F           F         F         T       T 
+
+        
+        -> Membership Operators 
+
+            -> Used To Check If an Object is in Given Sequence, 
+            and this leads to result in boolean type (True/False) 
+
+            -> NOTE: Membership Operators are keywords 
+
+                -> in: return True, if given object is in sequence, Otherwise False
+
+                -> not in: return True, if given object is not in sequence
+
+        
+        -> Identity Operators 
+
+            -> Used To Check If Objects are Same,
+            and this leads to result in boolean type (True/False)  
+
+            -> NOTE: Identity Operators are keywords 
+
+                -> is: return True, if objects are same  
+                
+                -> is not: return True, if objects are not same 
+
+                -> NOTE: if id() of both objects is same, then is returns True
+
+                -> NOTE: is (Identity operator): Compares the identity (memory address) of two objects. 
+                It returns True only if both variables refer to the exact same object in memory. 
+
+
+        -> Bitwise Operators 
+
+            -> Used In Low Level Programming (01010101010)
+
+            -> & - if both bits are 1, then result is 1, Otherwise 0 
+
+            -> | - if one of the bits is 1, then result is 1, Otherwise 0 
+
+            -> etc 
+
+    
+    
+    -> Data Types
+
+        -> Data Types are "Categorization" that defines, what kind of data a Variable can Hold 
+
+        -> Numeric Types 
+
+            -> int: 1,2,3,0,-1,-2 etc
+            
+            -> float: 1.5,2.5,1.0,-1.5 etc 
+
+            -> complex: In Maths We have a + ib 
+
+                -> NOTE: In python we use same concept as a + bj 
+
+
+        -> Boolean Types 
+
+            -> bool: Represents True / False 
+
+        -> NoneType
+
+            -> NoneType: Represents Absence Of Value 
+
+        -> String Type 
+
+            -> str: Represents Sequence Of Characters, Enclosed in ' ' or " " 
+
+        
+        -> Simple Data Types 
+
+            -> Holds Single Value In Variable 
+
+        -> Complex Data Types 
+
+            -> Holds Multiple Values In Variable 
+
+    
+    -> Complex Data Types 
+
+        -> Lists: List is a complex data type i.e it holds multiple values
+        and is represented using []
+
+        -> Tuples: Tuple is a complex data type i.e it holds multiple values
+        and is represented using ()
+
+        -> Sets: Set is a complex data type i.e it holds multiple values
+        and is represented using {}
+
+        -> Dictionaries: Dictionary is a complex data type i.e it holds multiple 
+        "key values pairs" and is represented using {}
+
+    
+    -> NOTE: All the above data types are pre-defined in Python Standard Library 
+
+    -> NOTE: Based On Customer Requirements, We Need To Create Our Own Data Types Also 
+
+    
+
+
+
