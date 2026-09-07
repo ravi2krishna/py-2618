@@ -627,6 +627,111 @@ Class - 6
     -> NOTE: Based On Customer Requirements, We Need To Create Our Own Data Types Also 
 
     
+Class - 7
+==========
+
+    -> NOTE: Based On Customer Requirements, We Need To Create Our Own Data Types Also 
+
+    -> Create Custom Data Types 
+
+        -> Syntax 
+
+            class CustomDataType:
+                Statements 
+    
+    -> Type Conversion & Type Casting 
+
+        -> Type Conversion / Implicit Conversion [Automatic]
+
+            -> Conversion of one data type to another data type, Automatically by python 
+
+            -> Type Conversion is SAFE i.e NO DATA LOSS 
+
+        
+        -> Type Casting / Explicit Conversion [Manual]
+
+            -> Conversion of one data type to another data type, Manually by Developer  
+
+            -> Type Casting is NOT SAFE i.e DATA LOSS 
+
+            -> Syntax 
+
+                -> We Use Casting Functions 
+
+                -> Use data type function_name before variable_name / value 
+
+                    -> data_type(variable_name)
+
+                    -> data_type(value)
 
 
 
+    -> Control Structures / Control Statements 
+
+        -> Control Structures Helps You Determine the "Flow Of Execution"
+        in Python Program, Allows You To 
+
+            -> Make Decisions 
+
+            -> Repeat Tasks 
+
+        -> Python Has Given Three Types Of Control Structures 
+
+            -> Conditional Structures (Decision Making Statements) 
+
+            -> Looping Structures (Iteration Statements) (Repetition)
+
+            -> Branching Structures (Jump Statements)
+
+        -> NOTE: To Work With Control Structures, We Need "Indentation" Knowledge 
+
+    
+    -> Indentation 
+
+        -> Indentation in Python is a  Mandatory Aspect of it's Syntax,
+        Used to define the "Structure" and "Hierarchy" in "Code Blocks"
+
+            -> Statement: Single Line Of Code 
+
+            -> Block: Multiple Line Of Code 
+
+        -> Unlike Other Programming Language that use Curly Braces {} or Keywords 
+        to define block of code, Python entirely relies in "Consistent" Indentation 
+
+            -> Using Space as Indentation 
+
+        -> NOTE: Understanding Indentation means 
+
+            -> When to use Space 
+            -> When Not to use Space 
+            -> How many spaces to use
+
+        -> NOTE: Python Allows for any "Consistent Number Of Spaces"  
+        the widely accepted and Recommended standard is 4 Spaces (tab)
+        
+            -> When to use Space 
+
+                -> When We Write Block Of Code 
+
+            -> When Not to use Space 
+
+                -> Single Line / Statement 
+
+            -> How many spaces to use
+
+                -> At least One, Recommended is Four Spaces 
+
+    
+
+    -> Conditional Structures (Decision Making Statements) 
+
+        -> Used To Run "Block Of Code", based on a condition result 
+
+            -> if 
+
+                -> runs a block of code, if the condition is True 
+
+                    -> Syntax
+
+                        if condition:
+                            block of code / Statements 
