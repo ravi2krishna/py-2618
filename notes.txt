@@ -952,3 +952,144 @@ Class - 9
     -> NOTE: Work On loops_tasks.md file which you can access from GitHub Link 
 
         -> https://github.com/ravi2krishna/py-2618/tree/main/05_control_stmts
+
+
+
+Class - 10
+==========
+
+    -> Strings 
+
+        -> Strings are one of the "Most Widely Used Datatype" in any programming language.
+
+        -> Strings are preferred for taking "Inputs"
+
+            -> http://instagram.com/ (username and password inputs)
+
+            -> https://www.instagram.com/accounts/emailsignup/ (inputs)
+
+
+        -> NOTE: Most Of The Inputs We Process From Web Pages Of An Application are Strings 
+
+        -> In Python String is a "Sequence Of Characters" Used To Represent Data 
+
+        -> NOTE: Strings are Widely Used For Handling and Manipulating Textual Information
+
+
+        -> Syntax For Representing Strings 
+
+            -> Strings can be Enclosed in '' or " " or """ """ or ''' ''' 
+
+            -> Single Line Strings: Use '' or " "
+
+            -> Multi Line Strings: Use """ """ or ''' ''' 
+
+        
+        -> Rules When Defining Strings 
+
+            -> When you use single quote in a string, enclose them in double quotes 
+            -> When you use double quote in a string, enclose them in single quotes 
+            -> When you use both single quote and double quote in a string, 
+            enclose them in triple single / double quotes 
+
+    
+        -> Accessing Strings 
+
+            -> Indexing 
+
+                -> String indexing in Python allows access to 
+                "individual characters within a string" 
+                using their "position", known as the "index".
+
+                -> Python uses zero-based indexing, meaning the first character is at index 0, 
+                the second at index 1, and so on.
+
+                -> Syntax 
+
+                    print(string[index])
+
+                -> Positive Indexing
+
+                    Starts from the beginning of the string.
+                    The index of the first character is 0.
+
+
+                -> Negative Indexing
+
+                    Starts from the end of the string.
+                    The index of the last character is -1.
+                
+
+                0   1 2  3  4  5
+                p   y t  h  o  n
+                -6 -5 -4 -3 -2 -1  
+
+                -> NOTE: If Index Is Out Of Range, We Get IndexError   
+
+
+            -> Slicing 
+
+                -> String slicing in Python is a method for "extracting a portion" 
+                (substring) from a larger string.
+
+                -> It utilizes the slice operator [] with specific 
+                indices to define the desired segment.
+
+                -> Syntax 
+
+                    string[start:end:step]
+
+                        -> start default is 0 (included) (inclusive)
+                        -> stop at this value (excluded) (exclusive)
+                        -> step is increment (default step is 1)
+
+                
+            -> Earlier We Used range()
+                
+                range(start, stop, step)
+                -> start default is 0 (included) (inclusive)
+                -> stop at this value (excluded) (exclusive)
+                -> step is increment (default step is 1)
+
+            -> NOTE: In The Future When Working With Lists and Tuples 
+            Indexing and Slicing Rules are same.
+
+
+        -> String Concatenation 
+
+            -> Joining Strings Using "+" Operator 
+
+        -> Formatted String Literals (f-strings)
+
+           -> Using Interpolation {} with f  
+
+        -> String Repetition 
+
+            -> Repeat Strings Using * Operator 
+
+        -> String Immutability 
+
+            -> Immutability Means Cannot Be Changed Or Modified 
+
+            -> Strings are Immutable In Nature, Meaning Strings Cannot Be Modified 
+
+
+        -> String Methods 
+
+            -> String methods in Python are "built-in methods" that operate on 
+            string objects allowing for 
+
+                -> Manipulations 
+
+                -> Transformations 
+
+                -> Validations 
+
+            -> NOTE: It is important to note that strings in Python are immutable, 
+            meaning these methods do not modify the original string but 
+            instead return a new string with the applied changes.
+
+            -> https://docs.python.org/3/library/stdtypes.html#string-methods
+
+
+
