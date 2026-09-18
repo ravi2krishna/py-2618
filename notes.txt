@@ -1092,4 +1092,11 @@ Class - 10
             -> https://docs.python.org/3/library/stdtypes.html#string-methods
 
 
+Class - 11
+==========
+
+    -> Strings Methods In Real World Applications
+
+    -> NOTE: We have dir() function, which tells what kind of
+    Operations you can perform on an object 
 
