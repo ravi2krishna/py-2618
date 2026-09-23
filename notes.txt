@@ -1188,3 +1188,106 @@ Class - 12
         -> NOTE: New Requirement, Store Multiple Employee PAN ID's  
         and Make Sure ID's Cannot Be Changed and Allow Only 
         Unique PAN ID's To Be Stored  
+
+
+
+Class - 13
+==========
+
+    -> Tuples 
+
+        -> Tuple is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with ,
+
+        -> Tuples are represented using () or using "tuple" class  
+
+    -> Accessing Data In Tuples 
+
+            -> Like In Strings, We Have index Concept In Tuples Too 
+
+            -> Index Starts From Zero 
+
+            -> Supports Both Positive and Negative Index 
+
+            -> Slicing Same As Strings 
+
+            -> Loops We Can Apply 
+
+            -> Operators We Can Apply 
+
+            -> Conditionals We Can Apply 
+
+            -> Duplicates Allowed 
+
+            -> Insertion Order Is Preserved  
+
+            -> NOTE: Tuples are Immutable In Nature (Cannot Be Changed)
+
+        -> Tuple Characteristics 
+
+            -> Immutable: Tuples Are Immutable In Nature 
+
+            -> Order: Lists Order Is Preserved 
+
+            -> Duplicates: Lists Allow Duplicates 
+
+
+            -> NOTE: New Requirement, Store Multiple Employee PAN ID's 
+
+            -> After 3 Months    
+
+            -> NOTE: New Requirement, Store Multiple Employee PAN ID's  
+            and Make Sure ID's Cannot Be Changed  
+
+
+        -> NOTE: Tuples are READ ONLY LISTS 
+
+
+    -> Dictionaries 
+
+        -> Dictionary is a data structure which allows you to store multiple "key values"
+        in a single variable, each value is separated with ,
+
+        -> Dictionaries are represented using {} or using "dict" class  
+
+        -> Dictionaries Store "key values" Pairs 
+
+            -> key:value 
+            
+            -> {key1:value1,key2:value2,key3:value3}
+
+            -> https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSib6nLERnnqTxvDUQa5l1ykY9tHPi8c9mWOQV2nwnRl0vXzj01vhWtr-o&s=10
+
+
+        -> Accessing Data In Dictionaries 
+
+            -> NOTE: Like In Strings, We Don't Have index Concept In Dictionaries
+
+                -> Dictionaries Doesn't Have Index 
+
+                -> NO SUPPORT FOR Both Positive and Negative Index 
+
+                -> NO SUPPORT FOR Slicing 
+
+            -> Loops We Can Apply 
+
+            -> Operators We Can Apply 
+
+            -> Conditionals We Can Apply 
+
+            -> Duplicates Allowed (*)
+
+                -> Values Can Be Duplicated 
+
+                -> Keys Should Be Unique 
+
+                    -> If We Add Duplicate Key, Latest Will Override Old Key 
+
+                    -> NOTE: Keys Must Be Immutable Objects Only, Whereas Values Can Be Any Object 
+
+                    -> NOTE: Mostly Keys Will Be Strings 
+
+            -> Insertion Order Is Preserved  
+
+            -> NOTE: Dictionaries Are Mutable In Nature (Can Be Changed)
+
