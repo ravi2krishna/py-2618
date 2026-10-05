@@ -1442,3 +1442,77 @@ Class - 15
         -> https://drive.google.com/file/d/1Yabj4nFUx_1g6eAw3EsEsopEWxivTK2Z/view?usp=sharing
 
         -> https://drive.google.com/file/d/1gpWYycwbeRWrmShF5Hc1V86KcIVYJCfE/view?usp=sharing
+
+Class - 16
+==========
+
+    
+    -> NOTE: Build Ecommerce Product Inventory System 
+
+        -> Create Product 
+        -> Update Product Price, Product Quantity
+        -> Delete Product 
+        -> Read Product 
+        -> Ask User To Purchase Product, if product is available (i.e Product Quantity above 0)
+        let the user purchase it, then decrease Product Quantity by 1 
+        -> Get Report: List Of All Products 
+        -> Get Report: Total Products Value (3 products) 
+
+            -> p1 - price is 100 - available Quantity is 3 -> 300
+            -> p2 - price is 200 - available Quantity is 5 -> 1000
+            -> p3 - price is 100 - available Quantity is 5 -> 500
+
+            -> Total Products Value - 1800
+
+    
+    
+    -> Functional Programming 
+
+        -> In computer science, functional programming is a programming paradigm 
+        where programs are constructed by applying and composing "functions"
+
+    
+    -> Functions 
+
+        -> In Python, a function is a named, "reusable block of code" that performs 
+        a specific task, takes input (arguments), processes data, 
+        and can return an output.
+
+
+    -> Why Functions 
+
+        -> Functions can break down complex problems into smaller and
+        simpler manageable sub tasks for promoting code modularity. 
+
+        -> Once defined a function, it can be "called multiple times", so that 
+        we can achieve code reusability.
+
+        -> Functions are defined using "def" keyword, followed by function name,
+        parenthesis(which may contain parameters), and a colon:
+        the code within the function is indented 
+
+        -> Syntax 
+
+            def function_name():
+                block of code 
+
+            def function_name(parameters):
+                block of code 
+
+        -> NOTE: Calling Function Is Must 
+
+            function_name()
+
+            function_name(arguments)
+
+
+
+
+
+
+    
+        
+
+
+    
+    
