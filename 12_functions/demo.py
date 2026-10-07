@@ -214,3 +214,154 @@ cart_value_total(89) # only one product
 cart_value_total(89,595,1800) # only three product 
 
 print('=' * 50)    
+
+# Arbitrary Positional Arguments
+def profile(*info):
+    print(info)
+    
+profile("Ravi","Krishna",34) 
+
+print('=' * 50)    
+
+# Arbitrary Keyword Arguments
+def profile(**info):
+    print(info)
+
+profile(fname="Ravi")     
+print('=' * 50)    
+profile(fname="Ravi",lname="Krishna",age=34) 
+
+print('=' * 50)   
+
+def profile(**info):
+    for data in info:
+        print(data) # Get Key
+
+profile(fname="Ravi",lname="Krishna",age=34) 
+
+print('=' * 50)   
+
+def profile(**info):
+    for data in info:
+        print(info[data]) # Get Value
+
+profile(fname="Ravi",lname="Krishna",age=34) 
+
+print('=' * 50)   
+
+# Real World Use Case -> https://i.ytimg.com/vi/tfZOZWVb81M/hq720.jpg?sqp=-oaymwEYCJUDENAFSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLD61RCES1Oo8OL919n3tkbqnBt2yA
+
+# Real World Use Case -> jan=3000, feb=4500, mar=9000 
+
+# Real World Use Case -> jan=2000, feb=4000, mar=5000, apr=1000, may=2000, jun=4000
+
+# Requirement: Calculate Total Transactions Amount and Number Of Transactions Made 
+# Real World Use Case -> jan=3000, feb=4500, mar=9000 (16500 - 3 Transactions)
+# Real World Use Case -> jan=2000, feb=4000, mar=5000, apr=1000, may=2000, jun=4000 (18000 - 6 Transactions)
+
+def bank_transactions(**transactions):
+    print(transactions)
+    
+    total_transactions_value = 0 
+    total_transactions_count = 0 
+    
+    for transaction in transactions:
+        # total_transactions_value += transaction # transaction = jan, feb, mar # TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+        total_transactions_value += transactions[transaction] # transaction = 3000, 4500, 9000
+        total_transactions_count += 1
+    print(f"Total Transactions Amount Is {total_transactions_value} for {total_transactions_count} Transactions")    
+        
+bank_transactions(jan=3000, feb=4500, mar=9000)
+
+print('=' * 50)
+
+bank_transactions(jan=2000, feb=4000, mar=5000, apr=1000, may=2000, jun=4000)
+
+print('=' * 50)
+
+# Without return 
+def add(a,b):
+    a + b 
+
+add(10,5)
+print(add(10,5))
+
+# With return 
+def add(a,b):
+    return a + b 
+
+add(10,5)
+print(add(10,5))
+
+print('=' * 50)
+
+
+# Problem 
+# def add(a,b):
+#     print(a+b)
+    
+# # function composition
+# def sub(c,d,e): # c + d - e 
+#     print(add(c,d) - e) # None - 5 TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'
+    
+# sub(3,4,5) # None - 5 = 2
+
+# Problem Fix With return
+def add(a,b):
+    return a + b 
+    
+# function composition
+def sub(c,d,e): # c + d - e 
+    print(add(c,d) - e) 
+    
+sub(3,4,5) # 7 - 5 = 2
+
+print('=' * 50)
+
+# If you use return, Make sure it's the last part of statement to be executed 
+def add(a,b):
+    print("Calculations Started")
+    return a + b 
+    print("Calculations Completed") # Code is structurally unreachable
+    
+print(add(1,2))
+    
+print('=' * 50)
+
+# if you have multiple return statements, first return will be considered 
+a = 50
+b = 60
+a = 70 
+
+print(a) # 50 
+
+print('=' * 50)
+
+def math_ops(a,b):
+    return a + b 
+    return a - b # Code is structurally unreachable
+    return a * b # Code is structurally unreachable 
+
+print(math_ops(2,3)) # 5
+
+print('=' * 50)
+
+# def math_ops(a,b):
+#     return a + b return a - b 
+#     return a + b, return a - b 
+
+def math_ops(a,b,operator):
+    if operator == "+":
+        return a + b 
+    elif operator == "-":
+        return a - b 
+    elif operator == "*":
+        return a * b 
+    else:
+        return "Invalid Operator Given"
+
+print(math_ops(2,3,"+"))
+print('=' * 50)
+print(math_ops(2,3,"*"))
+print('=' * 50)
+print(math_ops(2,3,"$"))
