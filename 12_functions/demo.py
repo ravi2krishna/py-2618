@@ -365,3 +365,138 @@ print('=' * 50)
 print(math_ops(2,3,"*"))
 print('=' * 50)
 print(math_ops(2,3,"$"))
+print('=' * 50)
+
+# Local Scope: lifetime exists only within the function
+
+def add(): 
+    la = 10 # local - inside the function
+    lb = 20 # local - inside the function
+    
+    # accessing within the function
+    print(la)
+    print(lb)
+    
+add()
+
+# print(la) # NameError: name 'la' is not defined. Did you mean: 'a'?
+# print(lb) # NameError: name 'lb' is not defined. Did you mean: 'b'?
+
+print('=' * 50)    
+
+def add(la,lb): # la and lb are local scope 
+    print(la)
+    print(lb)
+
+add(1,2)
+
+# print(la) # NameError: name 'la' is not defined. Did you mean: 'a'?
+# print(lb) # NameError: name 'lb' is not defined. Did you mean: 'b'?
+
+print('=' * 50) 
+
+# Global Scope 
+ga = 100 # Global Scope - outside function
+
+def add(la,lb):
+    print(la)
+    print(lb)
+    print(ga) # inside function - accessing global variable 
+    
+add(3,4)
+
+print(ga) # outside function - accessing global variable 
+
+print('=' * 50) 
+
+# name conflicts
+ga = 500 # Global Scope - outside function
+
+def add(la,lb,ga): # ga is local scope 
+    print(la)
+    print(lb)
+    print(ga) # preference is given to local variable
+    print(globals()['ga']) # point to 500 i.e global scope 
+
+add(5,6,7)
+
+print('=' * 50) 
+
+# global variable outside function
+count = 0
+print(count)
+count += 1
+print(count)
+
+print('=' * 50) 
+
+# global variable inside function
+count = 0
+print(count)
+def increment():
+    global count
+    count += 1 # UnboundLocalError: cannot access local variable 'count' where it is not associated with a value
+    return count 
+
+print(increment())
+
+print('=' * 50) 
+
+# Without Lambda Functions 
+def add(a,b):
+    return a + b 
+
+print(add(10,20))
+
+print('=' * 50) 
+
+# With Lambda Functions 
+# lambda arguments:expression  
+
+lambda a,b:a+b 
+print(lambda a,b:a+b)
+# print(()())
+# print((lambda_function)(arguments)) # IILE
+print((lambda a,b:a+b) (4,5)) # IILE 
+
+print('=' * 50) 
+
+# Without Lambda Functions 
+def is_even_num(num):
+    if num % 2 == 0:
+        return True 
+    else:
+        return False
+
+print(is_even_num(11))
+
+print('=' * 50) 
+
+print(is_even_num(12))
+
+print('=' * 50) 
+
+# With Lambda Functions 
+# lambda arguments:expression 
+# print((lambda a,b:a+b) (4,5)) # IILE 
+lambda num:num % 2 == 0 
+print((lambda num:num % 2 == 0) (4)) # IILE 
+print('=' * 50) 
+print((lambda num:num % 2 == 0) (5)) # IILE 
+print('=' * 50) 
+
+# Without Lambda Functions 
+def employee_info(emp_name,emp_email,emp_location):
+    print(f"Hi {emp_name} your email is {emp_email} and work location is {emp_location}")
+
+employee_info(emp_location="Hyderabad",emp_name="Ravi",emp_email="ravi@gmail.com")
+
+print('=' * 50) 
+
+# With Lambda Functions 
+# lambda arguments:expression 
+# print((lambda a,b:a+b) (4,5)) # IILE 
+lambda emp_name,emp_email,emp_location:print(f"Hi {emp_name} your email is {emp_email} and work location is {emp_location}")
+print((lambda emp_name,emp_email,emp_location:(f"Hi {emp_name} your email is {emp_email} and work location is {emp_location}")) (emp_location="Hyderabad",emp_name="Ravi",emp_email="ravi@gmail.com")) # IILE 
+
+print('=' * 50) 
