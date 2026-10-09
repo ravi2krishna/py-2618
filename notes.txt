@@ -1777,3 +1777,10 @@ Class - 19
         -> NOTE: Like ETL(Extract - Transform - Load) Operations 
 
 
+
+Class - 20
+==========
+
+    -> Functions Continued 
+
+    -> 
