@@ -1783,4 +1783,95 @@ Class - 20
 
     -> Functions Continued 
 
-    -> 
+
+Class - 21
+==========
+
+    -> Implement CRUD Applications Using Functional Paradigm (11_crud_app)
+
+        -> Additionally Implement "Search Students By Skill" 
+        Use Higher Order Function 
+
+
+        -> NOTE: Reusability In Terms Of "Code Blocks", We Use Functions 
+
+        -> NOTE: Reusability In Terms Of "Files", We Use Modules  
+
+        -> NOTE: Reusability In Terms Of "Folder", We Use Packages 
+
+        -> NOTE: Packages Contain Modules and Modules Contain Functions  
+
+    
+    -> Modules 
+
+        -> A Module Is "Simple Python File" Which Contains 
+
+            -> Variables
+            -> Functions 
+            -> Classes 
+            -> etc 
+
+        -> Syntax 
+
+            -> import module (this imports complete module i.e loads all the Functionalities in module)
+
+            -> from module import specific_functionality (import only what you need) # Recommended
+
+        
+        -> Types Of Modules 
+
+            -> Inbuilt Modules 
+
+                -> Provided as part of Standard Python Library 
+
+                -> math module provides access to common mathematical functions and constants
+
+                -> Python Inbuilt Modules - https://docs.python.org/3/py-modindex.html
+
+
+
+            -> User Defined Modules 
+
+                -> Created By Developers For Custom Requirements 
+
+                -> NOTE: Module Name Is Nothing But File Name 
+
+                -> Requirement: User/Customer Needs Arithmetic Operations and Profile Related Information
+
+
+            -> External Modules 
+
+                -> Provided By 3rd Part Vendors 
+
+                    -> https://pypi.org/
+
+                
+                -> The Python Package Index (PyPI) is a repository of software for the Python programming language.
+                Find, install and publish Python packages with the Python Package Index
+
+                -> pip is the standard package manager for Python used to 
+                install and manage software libraries and packages from the 
+                Python Package Index (PyPI). 
+
+                -> Syntax 
+
+                    -> pip install package 
+
+                -> Data Analyst 
+
+                    -> https://pypi.org/project/pandas/
+
+                    -> pip install pandas
+
+                -> Full Stack Developer
+
+                    -> https://pypi.org/project/requests/
+
+                    -> pip install requests
+
+                -> DevOps / Cloud Engineer 
+
+                    -> https://pypi.org/project/boto3/
+
+                    -> pip install boto3
+                
