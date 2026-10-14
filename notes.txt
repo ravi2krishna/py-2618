@@ -2059,3 +2059,61 @@ Class - 23
             -> json.dumps()	Serializes a Python object to a JSON-formatted string ("dump string").
 
             -> json.loads()	Deserializes a JSON-formatted string to a Python object ("load string").
+
+
+Class - 24
+==========
+
+    -> Implement CURD Application With Persistent Storage 
+
+        -> NOTE: Later On Replace With Database Tables, rather than storing in JSON Files. 
+
+    
+    -> Exception Handling 
+
+        -> Exception: It's an "Error", which might occur during the program execution 
+
+        -> By default when python encounters an Error, 
+        it abruptly "STOPS" the program execution
+
+        -> NOTE: When End Users Looks At Errors Like Below, they don't know what to do 
+        TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+        -> To Change The Default behavior Of Exception Handling, 
+        and handle Exceptions Your Way, We Need Following 
+
+            -> try: used to keep the code, that will cause error 
+
+            -> except: used to keep the code, that should run when error occurs 
+
+                -> NOTE: Use multiple except blocks, when multiple errors are encountered   
+
+            -> else: used to keep the code that should run, if No Exception was raised in try block 
+
+            -> finally: used to keep the code that should run, whether an exception raised or not 
+
+                -> DB / Files -> closing connections will be in done in finally block 
+
+            -> raise: used to manually trigger exceptions
+
+
+
+        -> Earlier we worked with In built Exceptions provided as part of 
+        python standard library (ZeroDivisionError, IndexError, ValueError, TypeError etc)
+
+            -> https://docs.python.org/3/library/exceptions.html 
+
+
+        -> But sometimes you need your "own custom errors" that describes a situation 
+        Specific to your program 
+
+        -> You create a custom exception by "defining a class" that inherits 
+        from Python’s built-in "Exception" class. 
+        This concept is connected to inheritance.
+
+        -> NOTE: All user-defined exceptions should also be derived from Exception class.
+
+            -> Syntax
+
+                class MyCustomError(Exception):
+                    pass 
