@@ -2117,3 +2117,357 @@ Class - 24
 
                 class MyCustomError(Exception):
                     pass 
+
+
+Class - 25
+==========
+
+    -> OOP - Object Oriented Programming 
+
+        -> OOP, or Object-Oriented Programming, is a programming model/paradigm 
+        that organizes code around "objects" 
+
+            -> Car is an object
+
+            -> Phone is an object
+
+            -> Person is an object 
+
+    -> Earlier (Functional Style) (task oriented)
+
+    -> Moving Forward 
+
+        -> Thinking in terms of real world entities (objects)
+
+                -> Object - Data (attributes/variables)
+
+                -> Object - Behavior (methods/functions)
+
+        
+        -> Writing Code That Follows Object Oriented Design Principals 
+
+                -> Focus is on objects and their relationships, not just functions(tasks)
+
+                -> We don't think about steps, we think about "who does what"
+
+
+    -> NOTE: Compare Functional Programming vs OOP 
+
+                            Functional Style                        Object Oriented Style 
+
+    -> Focus                Step by step functions                  Real World Objects 
+
+    -> Data & Function      Separate                                Combined inside a class 
+
+    -> Code Organization    One Big Script                          Multiple Reuseable Classes 
+
+    -> Reusability          Harder                                  Easy as for Inheritance
+
+    -> Maintenance          Complex as code grows                   More Cleaner 
+
+
+    -> Functional Style Code 
+
+        def attended_session(name):
+            print(f"{name} Attended Session") 
+
+        attended_session("Ravi") 
+
+    
+    -> Object Oriented Style Code 
+
+        class Student:
+
+            def __init__(self,name):
+                self.name = name 
+            
+            def attended_session(self):
+                print(f"{self.name} Attended Session")    
+
+            object = Student()
+            object.attended_session("Ravi")
+
+    
+    -> To Work With OOP, We need to know following concepts 
+
+        -> Classes 
+
+        -> Objects 
+
+        -> Methods 
+
+        -> Constructors
+
+        -> Instance Members 
+
+        -> Class Members 
+
+        -> Static Members 
+
+        -> OOP Principals 
+
+            -> Inheritance
+
+            -> Encapsulation
+
+            -> Abstraction
+
+            -> Polymorphism
+
+
+    
+    -> Object 
+
+        -> In Terms Of Real World, Everything is object 
+
+        -> Every Object Has Two Entities 
+
+            -> An Object "HAS" Something like Characteristics / Properties 
+
+                -> Car HAS brand 
+                -> Car HAS price 
+                -> Car HAS color 
+                -> Car HAS etc 
+
+                -> NOTE: In Technical they are Variables
+
+            -> An Object "DOES" Something like Behaviors / Actions 
+
+                -> Car DOES drive forward
+                -> Car DOES drive backward
+                -> Car DOES sound horn 
+                -> Car DOES etc 
+
+                -> NOTE: In Technical they are Methods 
+
+        
+        -> How To Create Objects ?
+
+           -> We Need Classes To Create Objects 
+
+    
+    -> Class
+
+        -> A class is a "Blueprint" for creating objects 
+
+        -> A class will define, what Characteristics & Behaviors, an object should posses 
+
+        -> NOTE: A Car class can define 
+
+            -> What can a car have 
+
+            -> What can a car do   
+
+        -> NOTE: Without Classes, Objects Cannot Exist
+
+    
+    -> Class: 
+        
+        -> https://s3.amazonaws.com/gc-p/screenshots/pics/68446cebb1c92aa555eca8fbff217689/large.jpg
+
+    -> Objects 
+
+        -> https://cdn.mos.cms.futurecdn.net/Drifb4WGUoCj2gVUo2BQnG-1540-80.jpg
+
+        -> https://carindia.in/wp-content/uploads/2020/06/new-BMW-M5-and-M5-Competition-web1.jpg
+
+
+    -> Methods 
+
+        -> A Method is block of code, which performs a task 
+        Associated With Objects
+
+        -> A Function is block of code, which performs a task 
+
+        -> NOTE: If we write a function inside a class it becomes Method
+
+    
+    -> Methods will be inside the class 
+
+        ->                      Functions                           Methods
+
+        How To Call             function_name(args)                 object.method_name(args)
+
+        Belongs To              independent                         object 
+
+        Defined Using           def function_name                   def method_name (but inside class)  
+
+    
+    -> Syntax 
+
+        class ClassName:
+            statements i.e Characteristics & Behaviors
+
+        
+        object = ClassName()
+        
+        
+        class ClassName:
+            def method_name():
+                statements
+
+        -> NOTE: In Python classes are automatically called, class call is not required 
+
+        -> NOTE: In Python Method Call is MUST 
+
+
+    -> When working with OOP Style, one of the confusions initially is 
+
+        -> TypeError: Student.student_studies() takes 0 positional arguments but 1 was given
+
+        -> Python automatically passes the instance (student_object) 
+        as the first argument to the method, which expects no arguments. 
+        Since student_studies() does not accept any parameters, Python raises a TypeError.
+
+        -> This way, when you call student_object.student_studies(), 
+        Python passes the instance as self, and the method works correctly.
+
+            def student_studies(self):
+                print("Student is studying Python")
+
+        -> self is nothing but object reference 
+
+        -> In Python Object-Oriented Programming (OOP), 
+        self represents the specific instance (object) 
+        of the class you are currently working with.
+
+        -> NOTE: For Other Languages Like Java self is this keyword
+
+        -> Instance methods must include self as their first parameter.
+
+        -> Omitting self causes a mismatch in the expected arguments, leading to the TypeError.
+
+        -> "self" is recommended, but you can pass anything as reference 
+
+    
+    -> Constructors 
+
+        -> In Python, the constructor is a "special method" used to 
+        initialize a newly created object's attributes (its initial state). 
+
+        -> This method is special, as it's automatically called 
+        when you create a new instance/object of a class. 
+        
+        -> The Special method used for this purpose is named __init__()
+
+        -> The __init__() method or constructor defines 
+        the actions that should run as soon as an object is created
+
+        -> NOTE: __init__() is defined within a class and always takes "self" as its
+        first parameter, which refers to Instance of object being created
+
+        -> __init__() can Additionally take other parameters to receive values 
+        for initializing objects attributes 
+
+        -> Syntax
+
+            class ClassName:
+                def __init__(self, parameter1, parameter2, ...):
+                    self.parameter1 = parameter1
+                    self.parameter2 = parameter2
+
+    
+
+    -> Instance Members (Associated With Objects)
+
+        -> Instance Variables  
+
+            -> Instance Variables belongs to an "object" i.e instance, not the class 
+
+            -> Instance Variables are defined in the __init__ method using "self" keyword 
+
+            -> Each Object you create has it's own copy of instance variable with different values 
+
+            -> Instance Variables are accessed via self.variable_name
+
+            -> Syntax
+
+                class Demo:
+                    def __init__(self,parameter):
+                        self.instance_var = value 
+
+        
+        -> Instance Methods 
+
+            -> Methods which are defined inside a class which 
+            operates on instance variables 
+
+            -> Instance Methods are "very commonly used" types of methods in OOP 
+
+            -> Instance Methods always take "self" as the first parameter 
+
+            -> Instance Methods can access instance variables and also class variables too 
+
+            -> Called using object_name.method()
+
+
+
+    -> Class Members (Associated With Class)
+
+        -> Class Variables 
+
+            -> Class Variables are "shared across all the instances of class" 
+            i.e "shared by all the objects" of the class 
+
+            -> Class Variables belong to class, rather than objects, 
+            ideal for storing data that is common/fixed for all objects 
+
+            -> Defined inside the class, but outside the methods 
+
+            -> Accessed using Classname.variable_name or object.variable_name 
+
+                -> Recommended is using Classname.variable_name
+
+            -> NOTE: Class Variables are "memory efficient" as 
+            only one copy is there unlike multiple copies like objects 
+
+            -> Syntax
+
+                class Demo:
+                    class_var = "i'm shared data"
+
+
+        -> Class Methods
+
+            -> Methods which are defined inside a class which 
+            operates on class variables 
+
+            -> Class Methods are not "very commonly used" types of methods in OOP 
+
+            -> Class Methods always take "cls" as the first parameter 
+
+            -> Class Methods are defined using @classmethod decorator 
+
+            -> Class Methods can access class variables, 
+
+                -> NOTE: Accessing instance data inside a class method gives error 
+
+            -> Called using ClassName.method()
+
+    
+
+    -> Static Members (Not Associated With Classes & Objects)
+
+        -> NOTE: In python we don't have Static Variables 
+
+            -> In other languages like java static variable is equivalent to Class Variable 
+
+            -> Static Variable In Other Languages == Class Variable In Python
+
+        -> Static Methods 
+
+            -> Static Methods are not bound to either class or object 
+
+            -> Static Methods does not depend on instance variable or class variable 
+
+            -> Not a commonly used method 
+
+            -> These Methods Don't take self or cls as first parameter 
+
+            -> NOTE: Behaves like a normal function, but inside a class  
+
+            -> Declared used @staticmethod decorator 
+
+            -> Used as utilities / helper functions 
+
+            -> Called Using ClassName
