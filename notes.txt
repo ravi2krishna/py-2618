@@ -2471,3 +2471,105 @@ Class - 25
             -> Used as utilities / helper functions 
 
             -> Called Using ClassName
+
+
+    
+Class - 26
+==========
+
+    -> Inheritance
+
+        -> Inheritance is a core OOP concept where a new class, 
+        called a subclass or child class, acquires the 
+        Properties(Variables) and Behaviors(Methods) from an 
+        existing class, called as Super Class or Parent Class.
+
+        -> NOTE: Main purpose of Inheritance is CODE Reusability.
+
+        -> Syntax 
+
+            class Parent:
+                pass 
+
+            class Child(Parent):
+                pass 
+
+    
+    -> Types Of Inheritance
+
+        -> Single Level Inheritance
+
+            -> One Parent -> One Child 
+
+        -> Multi Level Inheritance
+
+            -> GrandParent -> Parent -> Child 
+
+        -> Multiple Inheritance
+
+            -> One Child -> Multiple Parents 
+
+        -> Hierarchical Inheritance
+
+            -> One Parent -> Multiple Child 
+
+        -> Hybrid Inheritance
+
+            -> Combination Of Types Of Inheritance
+
+
+    
+    -> Encapsulation
+
+        -> Encapsulation is a core concept in object-oriented programming (OOP) that "binds"
+        Properties(Variables) and Behaviors(Methods) into a single unit called "Class".
+
+        -> NOTE: Binding Of Properties(Variables) and Behaviors(Methods) is done in Classes 
+
+            -> https://www.cincom.com/wp-content/uploads/2025/08/ENCAPSULATION-01.webp
+
+        
+        -> Encapsulation process also involves "restricting" direct access to an 
+        object's internal state, which is a principle known as "data hiding" 
+
+        -> Other Languages like Java or C++ "enforces" Strict Rules for Encapsulation,  
+        coming to python there is no Strict enforcing. 
+
+            -> Java/C++ = “You’re not allowed” 
+
+            -> Python = “You shouldn’t, but you can if you insist”
+
+
+        -> NOTE: Python intentionally does not enforce strict runtime access modifiers 
+        like Java or C++ do. It relies instead on naming conventions and a 
+        community philosophy famously summarized by Python's creator, Guido van Rossum, 
+        as "we are all consenting adults here". 
+        
+        -> This means Python assumes developers are responsible enough to 
+        respect visibility indicators rather than forcing the interpreter to 
+        build rigid walls around code.
+
+        -> While Python does not have strict access modifiers like "public", "private" or "protected" 
+        keywords found in some other languages(java, c++), 
+
+
+        -> Hiding Data 
+
+            -> We have public access 
+
+                -> Without any special naming conventions or prefixes 
+                are considered as public and can be accessed from anywhere 
+
+            
+            -> We have private access 
+
+                -> prefixed with a double underscore (__)
+
+                -> cannot be accessed from outside 
+
+            
+            -> We have protected access 
+
+                -> prefixed with a single underscore (_)
+
+                -> cannot be accessed from outside, but can be accessed in sub classes  
